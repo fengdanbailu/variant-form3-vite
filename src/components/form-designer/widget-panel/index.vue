@@ -69,9 +69,9 @@
 
         <template v-for="(ft, idx) in formTemplates">
           <el-card :bord-style="{ padding: '0' }" shadow="hover" class="ft-card">
-            <el-popover placement="right" trigger="hover">
+            <el-popover placement="right" trigger="hover" width="auto">
               <template #reference>
-                <img :src="ft.imgUrl" style="width: 200px">
+                <img :src="ft.imgUrl" style="width: 200px" >
               </template>
               <img :src="ft.imgUrl" style="height: 600px;width: 720px">
             </el-popover>
